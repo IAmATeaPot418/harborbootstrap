@@ -16,4 +16,4 @@ tar xvf ./harbor-offline-installer-v1.8.2-rc1.tgz
 cd ./harbor/
 publicdns=$(curl http://169.254.169.254/latest/meta-data/public-hostname)
 sed -i "s/hostname: reg.mydomain.com/hostname: $publicdns/" harbor.yml
-sudo ./install.sh --with-clair (e
+sudo ./install.sh --with-clair
