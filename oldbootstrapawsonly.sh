@@ -7,7 +7,7 @@ sudo apt update
 apt-cache policy docker-ce
 sudo apt install docker-ce -y
 curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-composesudo chmod +x /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose ; sudo chmod +x /usr/local/bin/docker-compose
 sudo apt install awscli -y
 curl -O https://storage.googleapis.com/harbor-releases/release-1.8.0/harbor-offline-installer-v1.8.2-rc1.tgz
 tar xvf ./harbor-offline-installer-v1.8.2-rc1.tgz
